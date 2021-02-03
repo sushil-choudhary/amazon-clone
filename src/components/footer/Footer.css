@@ -1,0 +1,27 @@
+.footer{
+    background-color: rgb(22, 41, 59);
+    background-color: rgb(16, 34, 41);
+    height: 400px;
+}
+
+.unstyled-list{
+    color: lightyellow;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.footer__logo{
+    height: 50px;
+    width: 300px;
+    object-fit: contain;
+    margin-left: 750px ;
+    margin-top: 30px;
+}
+
+.footer__row {
+    display: flex;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgb(16, 34, 41);
+}

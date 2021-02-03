@@ -1,0 +1,39 @@
+.signup {
+  color: rgb(194, 233, 233);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(73,136,114,0.9360119047619048) 51%, rgba(0,212,255,1) 100%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 240px;
+}
+
+.signup__logo {
+  width: 200px;
+  margin-right: 120px;
+  }
+
+  .signup_container {
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.signup_container > h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-left: 150px;
+  }
+
+.signup_container > p {
+    margin-top: 25px;
+    font-size: 14px;
+
+}
+
+  
