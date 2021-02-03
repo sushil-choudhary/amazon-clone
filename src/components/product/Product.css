@@ -32,11 +32,3 @@
 .product__price {
   margin-top: 5px;
 }
-
-.product > button {
-  background: #f0c14b;
-  border: 4px solid;
-  margin-top: 10px;
-  border-color: #a88734 #9c7e31 #846a29;
-  color: #111;
-}

@@ -1,11 +1,30 @@
 import React from "react";
 import "./Product.css";
 import { useStateValue } from "../../StateProvider";
+import { useSnackbar } from 'notistack';
+import Button from '@material-ui/core/Button';
+import { green, yellow } from '@material-ui/core/colors/';
+import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+  margin: {
+    margin: theme.spacing(1),
+  },
+}));
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {main: yellow[400]}
+  },
+});
 
 function Product({ id, title, image, price, rating }) {
+  const { enqueueSnackbar } = useSnackbar();
+  const classes = useStyles();
     const [{ basket }, dispatch] = useStateValue();
 
-    const addToBasket = (variant) => {
+    const addToBasket = (variant) => () => {
+      enqueueSnackbar('Added Successfully!', { variant });
        // dispatch the item into the data layer
         dispatch({
             type: "ADD_TO_BASKET",
@@ -39,7 +58,12 @@ function Product({ id, title, image, price, rating }) {
                         <strong>{price}</strong>
                       </p>
                   </div> 
-                     <button onClick={addToBasket}>Add to Basket</button>     
+                  <ThemeProvider theme={theme}>
+                    <Button variant="contained" color="primary" className={classes.margin}  onClick={addToBasket('success')}>
+                      Add to basket
+                    </Button>
+                  </ThemeProvider>
+                     
         </div>
   );
 }
