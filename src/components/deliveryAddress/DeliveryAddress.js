@@ -61,7 +61,7 @@ function DeliveryAddress() {
         FirstName:'',
         LastName:'',
         city:'',
-        street:'',
+        country:'',
         state:'',
         Zip:'',
         phone:'',

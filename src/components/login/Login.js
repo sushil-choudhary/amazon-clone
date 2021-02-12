@@ -81,9 +81,6 @@ function Login() {
 
     return (
         <div className="login" >
-            <Link to="/">
-                <img className="login__logo" src="https://purepng.com/public/uploads/large/amazon-logo-s3f.png" alt="image_logo"/>
-            </Link>
             <div className="login__container">
                 <h1>Sign in</h1>
                 <form className="form">

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Header from "./components/header/Header";
 import Home from './components/home/Home';
+import HomePay from './components/amazonpay/home/HomePay';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from './components/checkout/Checkout';
 import Login from "./components/login/Login";
@@ -45,6 +46,7 @@ const promise = loadStripe(
       <Router>
         <div className="app">
           <Switch>
+
             <Route path="/orders">
               <Header />
               <Orders />
@@ -63,6 +65,10 @@ const promise = loadStripe(
               <Checkout />
             </Route>
 
+            <Route path="/amazonpay">       
+              <HomePay />
+            </Route>
+
             <Route path="/payment">
               <Header />
               <Elements stripe={promise}>
@@ -79,8 +85,8 @@ const promise = loadStripe(
               <Header />
               <Home />
               <Footer />
-            </Route>
-            
+            </Route>   
+                    
           </Switch>
         </div>
       </Router>

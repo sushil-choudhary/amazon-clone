@@ -3,6 +3,7 @@ import "./Checkout.css";
 import CheckoutProduct from './CheckoutProduct';
 import { useStateValue } from '../../StateProvider';
 import Subtotal from '../subtotal/Subtotal';
+import { Link } from 'react-router-dom';
 
 function Checkout() {
     const[{ basket, user }, dispatch] = useStateValue();
@@ -15,7 +16,8 @@ function Checkout() {
                         <h3>Hello, {user?.email}</h3>
                         <p>
                             <strong>Pay faster for all your shopping needs with </strong>
-                            <a href="https://pay.amazon.com/"className="checkout__heading">Amazon Pay balance</a><br />    
+                            <Link to ="amazonpay">Amazon Pay balance</Link><br/>
+                            {/* <a href="https://pay.amazon.com/"className="checkout__heading">Amazon Pay balance</a><br />     */}
                             Get Instant refund on cancellations | Zero payment failures
                         </p>
                         <h2 className="checkout__title">

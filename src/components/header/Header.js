@@ -41,7 +41,7 @@ function Header() {
                         </span>
                     </div>
                 </Link>
-                <Link to="https://www.primevideo.com/?ref_=dvm_pds_amz_in_as_s_g_72|m_fQQR2NKbc_c423570252389">
+                <a href="https://www.primevideo.com/?ref_=dvm_pds_amz_in_as_s_g_146|m_lgAX6a65c_c386559716760">
                     <div className="header__option">
                         <span className="header__optionLineOne">
                             Your
@@ -50,7 +50,7 @@ function Header() {
                             Prime 
                         </span>
                     </div>
-                </Link>
+                </a>
             </div>
             <Link to="/checkout">
                 <div className="header__optionBasket">
