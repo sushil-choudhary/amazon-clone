@@ -3,7 +3,7 @@ import "./Product.css";
 import { useStateValue } from "../../StateProvider";
 import { useSnackbar } from 'notistack';
 import Button from '@material-ui/core/Button';
-import { green, yellow } from '@material-ui/core/colors/';
+import { yellow } from '@material-ui/core/colors/';
 import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({

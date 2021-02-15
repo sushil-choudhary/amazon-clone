@@ -6,7 +6,7 @@ function HeaderPay() {
     return (
         <div>
             <div className="headerPay">
-                <img className="pay_logo" src="https://m.media-amazon.com/images/G/01/EPSMarketingJRubyWebsite/assets/mindstorms/amazonpay-logo-rgb_clr._CB1560911315_.svg"/>
+                <img className="pay_logo" src="https://m.media-amazon.com/images/G/01/EPSMarketingJRubyWebsite/assets/mindstorms/amazonpay-logo-rgb_clr._CB1560911315_.svg" alt="amazonlogo"/>
                 <div className="navPay">
                 <Link><p className="navPay1">For businesses</p></Link>
                 <Link><p className="navPay2">For shoppers</p></Link>

@@ -7,7 +7,7 @@ function HomePay() {
         <div>
             <HeaderPay />
                 <a href="https://www.sellerapp.com/blog/amazon-pay-seller-protection/">
-                    <img src="https://www.sellerapp.com/blog/wp-content/uploads/2018/05/Amazon-Pay-pros-and-cons.png" className="amazonpay_image"/>
+                    <img src="https://www.sellerapp.com/blog/wp-content/uploads/2018/05/Amazon-Pay-pros-and-cons.png" className="amazonpay_image" alt="amazonpay_image"/>
                 </a>
         </div>
     )
