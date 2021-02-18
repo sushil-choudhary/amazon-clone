@@ -10,9 +10,8 @@ const firebaseConfig = {
   storageBucket: "fir-60310.appspot.com",
   messagingSenderId: "555535653228",
   appId: "1:555535653228:web:0370fbc1dfa4eae2ed3b49",
-  measurementId: "G-SQW6Q0EGKF"
+  measurementId: "G-SQW6Q0EGKF",
 };
-
 
 const provider = new firebase.auth.GoogleAuthProvider();
 

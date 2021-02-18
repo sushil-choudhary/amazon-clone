@@ -1,40 +1,40 @@
-.headerPay{
-    z-index: 100;
-    display: flex;
-    height: 60px;
-    align-items: center;
-    background-color:rgb(248, 248, 248);
-    color: rgb(0, 0, 0);
-    position: sticky;
-    top: 0;
+.headerPay {
+  z-index: 100;
+  display: flex;
+  height: 60px;
+  align-items: center;
+  background-color: rgb(248, 248, 248);
+  color: rgb(0, 0, 0);
+  position: sticky;
+  top: 0;
 }
-.pay_logo{
-    margin-left: 30px;
+.pay_logo {
+  margin-left: 30px;
 }
-.navPay{
-    margin-left: 30%;
-    margin-top: 50px;
-    font-weight: 600;
-    display: flex;
-    position: sticky;
-    color: black;
+.navPay {
+  margin-left: 30%;
+  margin-top: 50px;
+  font-weight: 600;
+  display: flex;
+  position: sticky;
+  color: black;
 }
-.navPay1{
-    color: black;
+.navPay1 {
+  color: black;
 }
 .navPay2 {
-    margin-left: 50px;
-    color: black;
+  margin-left: 50px;
+  color: black;
 }
 .navPay3 {
-    margin-left: 50px;
-    color: black;
+  margin-left: 50px;
+  color: black;
 }
 .navPay4 {
-    margin-left: 50px;
-    color: black;
+  margin-left: 50px;
+  color: black;
 }
 .navPay5 {
-    margin-left: 50px;
-    color: black;
+  margin-left: 50px;
+  color: black;
 }
