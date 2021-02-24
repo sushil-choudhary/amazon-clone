@@ -1,11 +1,15 @@
 import React from "react";
 import "./CheckoutProduct.css";
+import { useSnackbar } from "notistack";
 import { useStateValue } from "../../StateProvider";
 
 function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
   // eslint-disable-next-line no-unused-vars
   const [{ basket }, dispatch] = useStateValue();
-  const removeFromBasket = () => {
+  const { enqueueSnackbar } = useSnackbar();
+
+  const removeFromBasket = (variant) => () => {
+    enqueueSnackbar("Deleted Successfully!", { variant });
     // remove the item from the basket
     dispatch({
       type: "REMOVE_FROM_BASKET",
@@ -29,7 +33,7 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
               <p>⭐</p>
             ))}
         </div>
-        {!hideButton && <button onClick={removeFromBasket}>Delete</button>}
+        {!hideButton && <button onClick={removeFromBasket("removed")}>Delete</button>}
       </div>
     </div>
   );
